@@ -17,7 +17,7 @@ class SocketManager: NSObject {
     static let sharedInstance = SocketManager()
     
     //SocketIO client, it is our socket representation
-    var socket: SocketIOClient = SocketIOClient(socketURL: URL(string: "http://192.168.25.2:3000")!)        
+    var socket: SocketIOClient = SocketIOClient(socketURL: URL(string: "http://192.168.xx.x:3000")!)        
     
     //Socket connection status (Connected, Disconnected, etc)
     var connectionStatus: SocketIOClientStatus {
