@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		335DD08FA20CD7B55AD9F4C7 /* Pods_WebSocketTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8C0392F7ACB1BB5ABF041F /* Pods_WebSocketTracker.framework */; };
 		A54E14C81ED9AEF90066F17E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54E14C71ED9AEF90066F17E /* AppDelegate.swift */; };
 		A54E14CA1ED9AEF90066F17E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54E14C91ED9AEF90066F17E /* ViewController.swift */; };
 		A54E14CD1ED9AEF90066F17E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54E14CB1ED9AEF90066F17E /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		A54E14D21ED9AEF90066F17E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54E14D01ED9AEF90066F17E /* LaunchScreen.storyboard */; };
 		A54E14DD1ED9AEF90066F17E /* WebSocketTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54E14DC1ED9AEF90066F17E /* WebSocketTrackerTests.swift */; };
 		A54E14E81ED9AEFA0066F17E /* WebSocketTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54E14E71ED9AEFA0066F17E /* WebSocketTrackerUITests.swift */; };
+		A54E14F61ED9B4380066F17E /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54E14F51ED9B4380066F17E /* SocketManager.swift */; };
+		A54E14F81ED9DA800066F17E /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54E14F71ED9DA800066F17E /* MapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A45B887241C42A95B85701D /* Pods-WebSocketTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebSocketTracker/Pods-WebSocketTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		2B8C0392F7ACB1BB5ABF041F /* Pods_WebSocketTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebSocketTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54E14C41ED9AEF90066F17E /* WebSocketTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54E14C71ED9AEF90066F17E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A54E14C91ED9AEF90066F17E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		A54E14E31ED9AEFA0066F17E /* WebSocketTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSocketTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54E14E71ED9AEFA0066F17E /* WebSocketTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTrackerUITests.swift; sourceTree = "<group>"; };
 		A54E14E91ED9AEFA0066F17E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54E14F51ED9B4380066F17E /* SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		A54E14F71ED9DA800066F17E /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		F2F8F69B72F7A5C0287E407C /* Pods-WebSocketTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebSocketTracker/Pods-WebSocketTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335DD08FA20CD7B55AD9F4C7 /* Pods_WebSocketTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EE0B24657EF5DCEC8207641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A45B887241C42A95B85701D /* Pods-WebSocketTracker.debug.xcconfig */,
+				F2F8F69B72F7A5C0287E407C /* Pods-WebSocketTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A54E14BB1ED9AEF90066F17E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +99,8 @@
 				A54E14DB1ED9AEF90066F17E /* WebSocketTrackerTests */,
 				A54E14E61ED9AEFA0066F17E /* WebSocketTrackerUITests */,
 				A54E14C51ED9AEF90066F17E /* Products */,
+				2EE0B24657EF5DCEC8207641 /* Pods */,
+				A7C3CAB6907E1BD5E59564A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +117,12 @@
 		A54E14C61ED9AEF90066F17E /* WebSocketTracker */ = {
 			isa = PBXGroup;
 			children = (
-				A54E14C71ED9AEF90066F17E /* AppDelegate.swift */,
-				A54E14C91ED9AEF90066F17E /* ViewController.swift */,
-				A54E14CB1ED9AEF90066F17E /* Main.storyboard */,
-				A54E14CE1ED9AEF90066F17E /* Assets.xcassets */,
-				A54E14D01ED9AEF90066F17E /* LaunchScreen.storyboard */,
-				A54E14D31ED9AEF90066F17E /* Info.plist */,
+				A5839C181EEECB7C00A45923 /* AppDelegate */,
+				A5839C191EEECB8900A45923 /* Controller */,
+				A5839C1D1EEECC2400A45923 /* WebSocket */,
+				A5839C1A1EEECBB200A45923 /* View */,
+				A5839C1C1EEECBF400A45923 /* Resources */,
+				A5839C1B1EEECBD100A45923 /* Supporting Files */,
 			);
 			path = WebSocketTracker;
 			sourceTree = "<group>";
@@ -125,6 +145,64 @@
 			path = WebSocketTrackerUITests;
 			sourceTree = "<group>";
 		};
+		A5839C181EEECB7C00A45923 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A54E14C71ED9AEF90066F17E /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A5839C191EEECB8900A45923 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A54E14C91ED9AEF90066F17E /* ViewController.swift */,
+				A54E14F71ED9DA800066F17E /* MapVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A5839C1A1EEECBB200A45923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A54E14CB1ED9AEF90066F17E /* Main.storyboard */,
+				A54E14D01ED9AEF90066F17E /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A5839C1B1EEECBD100A45923 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A54E14D31ED9AEF90066F17E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5839C1C1EEECBF400A45923 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A54E14CE1ED9AEF90066F17E /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A5839C1D1EEECC2400A45923 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				A54E14F51ED9B4380066F17E /* SocketManager.swift */,
+			);
+			name = WebSocket;
+			sourceTree = "<group>";
+		};
+		A7C3CAB6907E1BD5E59564A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B8C0392F7ACB1BB5ABF041F /* Pods_WebSocketTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54E14EC1ED9AEFA0066F17E /* Build configuration list for PBXNativeTarget "WebSocketTracker" */;
 			buildPhases = (
+				59205A6E1D5228317FDE3822 /* [CP] Check Pods Manifest.lock */,
 				A54E14C01ED9AEF90066F17E /* Sources */,
 				A54E14C11ED9AEF90066F17E /* Frameworks */,
 				A54E14C21ED9AEF90066F17E /* Resources */,
+				16B314B1495613A9608C0B1B /* [CP] Embed Pods Frameworks */,
+				FA9A56B244E20E7452F9BF4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +274,7 @@
 				TargetAttributes = {
 					A54E14C31ED9AEF90066F17E = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G6ZKV32R73;
 						ProvisioningStyle = Automatic;
 					};
 					A54E14D71ED9AEF90066F17E = {
@@ -254,12 +336,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16B314B1495613A9608C0B1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebSocketTracker/Pods-WebSocketTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59205A6E1D5228317FDE3822 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA9A56B244E20E7452F9BF4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebSocketTracker/Pods-WebSocketTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A54E14C01ED9AEF90066F17E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A54E14CA1ED9AEF90066F17E /* ViewController.swift in Sources */,
+				A54E14F81ED9DA800066F17E /* MapVC.swift in Sources */,
+				A54E14F61ED9B4380066F17E /* SocketManager.swift in Sources */,
 				A54E14C81ED9AEF90066F17E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,24 +542,32 @@
 		};
 		A54E14ED1ED9AEFA0066F17E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A45B887241C42A95B85701D /* Pods-WebSocketTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G6ZKV32R73;
 				INFOPLIST_FILE = WebSocketTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tutorial.WebSocketTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A54E14EE1ED9AEFA0066F17E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F8F69B72F7A5C0287E407C /* Pods-WebSocketTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G6ZKV32R73;
 				INFOPLIST_FILE = WebSocketTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tutorial.WebSocketTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -505,6 +645,7 @@
 				A54E14EE1ED9AEFA0066F17E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A54E14EF1ED9AEFA0066F17E /* Build configuration list for PBXNativeTarget "WebSocketTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +654,7 @@
 				A54E14F11ED9AEFA0066F17E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A54E14F21ED9AEFA0066F17E /* Build configuration list for PBXNativeTarget "WebSocketTrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +663,7 @@
 				A54E14F41ED9AEFA0066F17E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
