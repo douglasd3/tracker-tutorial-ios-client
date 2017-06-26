@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import SocketIO
 
-class ViewController: UIViewController {
+class UsersListVC: UIViewController {
     
     // MARK: - IBOutlets
 
@@ -145,7 +145,7 @@ class ViewController: UIViewController {
 
 // MARK: - CLLocationManagerDelegate -
 
-extension ViewController: CLLocationManagerDelegate {
+extension UsersListVC: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
@@ -158,7 +158,7 @@ extension ViewController: CLLocationManagerDelegate {
 
 // MARK: - UITableViewDelegate and UITableViewDataSource -
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension UsersListVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
