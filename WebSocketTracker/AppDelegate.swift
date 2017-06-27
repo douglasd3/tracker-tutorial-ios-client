@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        //We close connection everytime the app starts
+        //We open connection everytime the app starts
         SocketManager.sharedInstance.establishConnection()
     }
 
