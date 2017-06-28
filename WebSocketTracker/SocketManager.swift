@@ -43,13 +43,13 @@ class SocketManager: NSObject {
     
     //We listen to connection changes and respond accordingly
     func listenToConnectionChanges(onConnectHandler: @escaping ()->Void, onDisconnectHandler: @escaping ()->Void) {
-        socket.on("connect") {  ( dataArray, ack) -> Void in            
+        socket.on(clientEvent: .connect) {  ( dataArray, ack) -> Void in
             onConnectHandler()
         }
         
-        socket.on("disconnect") {  ( dataArray, ack) -> Void in
+        socket.on(clientEvent: .disconnect) {  ( dataArray, ack) -> Void in
             onDisconnectHandler()
-        }
+        }        
     }
     
     // MARK: - Location sharing messages
